@@ -10,9 +10,10 @@ export default defineConfig({
       name: "cards",
       filename: "remoteEntry.js",
       exposes: {
-        "./App": "./src/App.tsx"
+        "./App": "./src/App.tsx",
+        "./products": "./src/Stores/products"
       },
-      shared: ["react", "react-dom"],
+      shared: ["react", "react-dom", "jotai"],
     })
   ],
   build: {
